@@ -45,7 +45,7 @@ public class GlobeBlockEntityRenderer extends BlockEntityRenderer<GlobeBlockEnti
 			matrices.pop();
 
 			matrices.push();
-			matrices.translate(-7.5, 0, -7.5);
+			matrices.translate(-7, 0, -7);
 			matrices.scale(16F, 16F, 16F);
 			renderBase(blockEntity.getBaseBlock(), matrices, vertexConsumers, light, overlay);
 			matrices.pop();
@@ -69,9 +69,9 @@ public class GlobeBlockEntityRenderer extends BlockEntityRenderer<GlobeBlockEnti
 			matrices.push();
 			if (inner) {
 				matrices.translate(-8 * scale, -8 * scale, -8 * scale);
-				matrices.translate(-7.5, 0, -7.5);
+				matrices.translate(-7, 0, -7);
 			} else {
-				matrices.translate(-1 / 32F, 0, -1/32F);
+				matrices.translate(-1 / 16f, 0, -1/16f);
 			}
 
 			matrices.scale(scale, scale, scale);

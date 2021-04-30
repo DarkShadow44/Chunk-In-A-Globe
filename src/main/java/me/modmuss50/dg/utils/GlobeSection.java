@@ -26,7 +26,7 @@ import java.util.Map;
 
 public class GlobeSection {
 
-	public static final int GLOBE_SIZE = 17;
+	public static final int GLOBE_SIZE = 18;
 
 	private final Map<BlockPos, BlockState> stateMap = new HashMap<>();
 	private final Map<BlockPos, Integer> globeData = new HashMap<>();
